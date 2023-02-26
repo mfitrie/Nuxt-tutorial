@@ -9,10 +9,17 @@
             veniam id asperiores illo dolores ratione tempore, dolor, 
             ab neque totam cupiditate voluptatum laborum dicta nihil? Voluptatem, mollitia.
         </p>
+        <div>Data: {{ data }}</div>
     </div>
 </template>
 
 <script setup>
+const {data} = await useFetch('/api/ninja?name=mario', {
+    method: 'post',
+    body: {
+        age: 30,
+    }
+});
 </script>
 
 <style scoped>
