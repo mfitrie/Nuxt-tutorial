@@ -16,5 +16,8 @@ export default defineNuxtConfig({
                 }
             ]
         }
+    },
+    runtimeConfig: {
+        currencyKey: process.env.CURRENTCY_API_KEY,
     }
 })
